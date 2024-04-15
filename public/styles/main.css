@@ -1,0 +1,315 @@
+
+html {
+    min-height: 100%;
+    width:fit-content ;
+}
+body{
+    margin: 0%;
+    background: #DA7600;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+}
+
+/*-----------------------------------------MAIN PAGE-------------------------------------------------------*/
+
+
+#navBar{
+    display: flex;
+    background-color: black;
+    height: 5.625rem;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+#navHeader{
+     flex-shrink: 1; 
+     font-family: "Press Start 2P";
+     font-size: 2rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 153.5%;
+     color: rgb(255, 255, 255);
+     /*padding-left: 23px;
+     padding-top: 32px;
+     margin-top: 0%;
+     margin-bottom: 1rem;*/
+     margin: 20px;
+
+     text-align: center;
+}
+
+
+.membershipText{
+    font-family: "Press Start 2P";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153.5%;
+    color: rgb(255, 255, 255);
+    /*padding-left: 23px;
+    padding-top: 32px;
+    margin-top: 0%;
+    margin-bottom: 1rem;*/
+    /*margin: 20px;*/
+    
+    text-align: center;
+}
+
+.corner{
+    flex-shrink: 1;
+    gap:20px;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    flex-direction: row;
+    margin-left: auto;
+    /*margin-right: 25px;
+    margin-top: 32px;*/
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+
+#MainPageAvci{
+    
+     font-family: "Press Start 2P";
+     font-size: 3rem;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 153.5%;
+     color: rgb(0, 0, 0);
+     /*padding-left: 23px;
+     padding-top: 32px;
+     margin-top: 0%;
+     margin-bottom: 1rem;*/
+     margin: 20px;
+
+     text-align: center;
+}
+
+#MainPageSearch{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    flex-basis: 50%;
+}
+
+
+#MainInput{
+    font-family: "Press Start 2P";
+    background: #000000;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    color: white;
+    flex-grow: 2;
+    
+}
+::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.712);
+}
+#searchLogo{
+    flex-grow: 0;
+    min-width: 0;
+    min-height: 0;
+}
+
+#searchLogo svg{
+    height: 90%;
+    width: 90%;
+
+}
+.UnderSearch{
+    
+    text-align: center;
+    margin: 2.5%;
+}
+
+#Footer{
+    background-color: #000000;
+    display: flex;
+    gap: 1%;
+    justify-content: flex-end;
+    align-items: center;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+}
+
+#infologo-a{
+    margin-right: auto;
+    width: max-content;
+}
+
+#Footer svg{
+    color: #DA7600 !important;
+    min-width: 10px;
+    min-height: 10px;
+    margin: 0.5%; 
+}
+#infologo{
+    margin-right: auto !important;
+}
+/*515px*/
+
+#form1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------------------GAME PAGE-------------------------------------------------------*/
+
+#gamePageMain{
+    /*position: relative;*/
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+
+  }
+#back{
+    
+    grid-area: 1/ 1/ 1/ 1;
+    z-index: -1;
+    height: fit-content;
+
+}
+
+#content{
+
+    grid-area: 1/ 1/ 1/ 1;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3.5fr;
+    margin-top: 3rem !important;
+    margin: auto;
+    width: auto;
+
+
+    height: auto;
+
+}
+
+
+#moreStores{
+    color: #DA7600;
+    font-family: "Press Start 2P";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153.5%; /* 36.84px */
+    width: fit-content;
+    height: fit-content;
+}
+#goToStore{
+    color: #26F205;
+    font-family: "Press Start 2P";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 153.5%; /* 36.84px */
+    width: fit-content;
+    height: fit-content;
+}
+.price{
+color: #FFF;
+font-family: "Press Start 2P";
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 153.5%; /* 24.56px */
+text-align: start;
+}
+.greeny{
+    color: #26F205 !important;
+}
+.price.yellowy{
+    color: DA7600 !important;
+}
+button.link { background:none; border:none; }
+
+button:hover {
+    cursor: pointer;
+  }
+
+
+
+#otherStores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    text-align: center;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 50%;
+    
+}
+.otherOptions{
+    display: inline-flex;
+    align-items: center;
+    
+    
+}
+#otherStores::-webkit-scrollbar {
+    width: 0.5rem;
+    
+  }
+#otherStores::-webkit-scrollbar-track {
+    background: none;
+  }
+
+#otherStores::-webkit-scrollbar-thumb {
+    background: #8a4a01;
+    
+  }
+
+#otherStores::-webkit-scrollbar-thumb:hover {
+    background: #DA7600;
+  }
+
+
+@media (max-width: 515px) {
+
+    /* CSS for screens below or equal to 600px wide */
+    /*div {
+      width: 100% !important; 
+    }*/
+    .membershipText{
+        font-size: 0.5rem !important;
+    }
+    #navHeader{
+        font-size: 1rem !important;
+    }
+    #MainPageAvci{
+        font-size: 2rem !important;
+    }
+    form{
+        flex-basis: 70%;
+    }
+    #MainPageSearch svg{
+
+    }
+  }

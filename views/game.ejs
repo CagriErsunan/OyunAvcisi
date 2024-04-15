@@ -1,0 +1,51 @@
+<%- include("./partials/header.ejs") %>
+
+
+    <div id="gamePageMain">
+      <div id="content">
+        <div id="gameAndLowest">
+          <div id="game">
+              <img src="<%= imageURL %>" > <!--Game Cover Img-->
+              <p><%= GameTitle %></p> <!--Game Title-->
+          </div> 
+          <div id="lowestPrice">
+              <p class="price">EN UYGUN FIRSAT</p>
+              <svg id="exclaimation" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 28 24" fill="none">
+                  <path d="M18.4751 18.1638L18.5531 21.0514L17.4287 21.0514L17.4547 22.014L16.3303 22.014L16.3563 22.9765L11.8586 22.9765L11.8326 22.014L10.7082 22.014L10.6822 21.0514L9.55774 21.0514L9.47974 18.1638L10.6042 18.1638L10.5782 17.2013L11.7026 17.2013L11.6766 16.2388L16.1743 16.2388L16.2003 17.2013L17.3247 17.2013L17.3507 18.1638L18.4751 18.1638Z" fill="#26F205"/>
+                  <path d="M11.4685 8.53853L10.3441 8.53853L10.1621 1.80078L16.9086 1.80078L17.0907 8.53853L15.9662 8.53853L16.1222 14.3137L11.6245 14.3137L11.4685 8.53853Z" fill="#26F205"/>
+                </svg>
+              <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="3rem" height="1.5rem" viewBox="0 0 59 34" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M36.8592 33.5454L29.5116 33.5454L29.5116 24.1597L7.46825 24.1597L7.46825 19.4668H0.12207L0.12207 5.3885L7.46963 5.3885L7.46963 10.0814L29.5116 10.0814L29.5116 0.69606L36.8592 0.69606L36.8592 10.0814H36.8603V5.38823L44.2078 5.38823V10.0814H51.5536V14.774L58.9026 14.774V19.4668L51.5536 19.4668L51.5536 24.1597H44.2078V28.8521L36.8603 28.8521V24.1597H36.8592V33.5454Z" fill="#26F205"/>
+                </svg>
+              <p class="price"><%= bestStore%> mağazasında şu anda: </p>
+              <p class="price greeny"><%= parseFloat((minfiyat * price)).toFixed(2) %> TL</p>
+              <button id="goToStore" class="link">beni mağazaya götür</button>  
+          </div>
+        </div>
+        <div id="otherStores">
+          <% var i = 1; %>
+          <% for(i=1; i<gameDeals.length; i++){ %>
+              <div class="otherOptions">
+                            <p class="price yellowy"> <%= store[i] %><br> mağazasında<br> şu anda: <span class="greeny"><%= parseFloat((gameDeals[i].price * price)).toFixed(2) %> TL</span> </p>
+                            <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="65" height="79" viewBox="0 0 65 79" fill="none">
+                                <path d="M29.291 66.625H19.666V78.25H29.291V66.625Z" fill="white"/>
+                                <path d="M58.166 66.625H48.541V78.25H58.166V66.625Z" fill="white"/>
+                                <path d="M16.4577 16.25V8.5H13.2493V0.75H0.416016V8.5H6.83268V16.25H10.041V27.875H13.2493V39.5H16.4577V51.125H19.666V58.875H58.166V51.125H61.3744V39.5H64.5827V16.25H16.4577ZM58.166 31.75H54.9577V43.375H51.7494V51.125H26.0827V47.25V43.375H22.8743V31.75H19.666V24H58.166V31.75Z" fill="white"/>
+                            </svg>
+              </div>
+            <% }; %>
+        </div>
+      </div> 
+
+      <div id="back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="95%" height="76%" viewBox="0 0 1381 784" fill="none">
+          <path d="M1230.43 39.3586H1380.43V740.696H1230.5V783.929H160.434V740.429H1.93359L0.5 39.3586H160.434V0.929199H1230.43V39.3586Z" fill="black"/>
+        </svg>
+      </div>
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>    
+<script >
+
+</script>
+<%- include("./partials/footer.ejs") %>
