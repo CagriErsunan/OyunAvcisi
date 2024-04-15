@@ -6,7 +6,7 @@ import axios from "axios";
 const app = express();
 const port = 3000;
 
-const exchangeRateAPI_KEY = "21cb84d04487e854542f28c2"; `https://v6.exchangerate-api.com/v6/${exchangeRateAPI_KEY}/latest/USD`
+const exchangeRateAPI_KEY = "EXCHANGERATE_API_ANAHTARINIZI_GİRİN"; `https://v6.exchangerate-api.com/v6/${exchangeRateAPI_KEY}/latest/USD`
 
 var config = {
     method: 'get',
